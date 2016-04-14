@@ -1,0 +1,44 @@
+{
+  "name": "api-mongo-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --reporter nyan --recursive test/",
+    "coverage": "NODE_ENV=test ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --recursive",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "lint": "./node_modules/.bin/eslint index.js start.js **/*.js || true",
+    "prod": "NODE_ENV=production node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/pedrobarrostech/api-docker-mongo.git"
+  },
+  "author": "Pedro Barros",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "coveralls": "^2.11.2",
+    "eslint": "^0.18.0",
+    "gaze": "^0.5.1",
+    "istanbul": "^0.3.13",
+    "mocha": "^2.2.1",
+    "supertest": "^0.15.0"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.24",
+    "boom": "^2.7.0",
+    "crypto": "0.0.3",
+    "good": "^6.2.0",
+    "good-console": "^5.0.2",
+    "hapi": "^8.8.0",
+    "hapi-auth-bearer-token": "^3.1.1",
+    "jsonwebtoken": "^4.2.2",
+    "lodash": "^3.6.0",
+    "mongoose": "^4.0.1",
+    "passport": "^0.2.1",
+    "passport-local": "^1.0.0"
+  },
+  "private": true
+}
