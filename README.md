@@ -1,4 +1,4 @@
-# Node API 
+# Dockerized Node API 
 [![Coverage Status](https://coveralls.io/repos/pedrobarrostech/api-mongo-docker/badge.svg?branch=master&service=github)](https://coveralls.io/github/pedrobarrostech/api-mongo-docker/?branch=master)
 
 An example of a dockerized node API built with [hapijs](http://hapijs.com), [mongodb](https://www.mongodb.org/) and [mongoose](https://mongoosejs.com).
