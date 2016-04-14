@@ -1,5 +1,4 @@
-# Node API [![Circle CI](https://circleci.com/gh/pedrobarrostech/api-mongo-docker.svg?style=svg)](https://circleci.com/gh/pedrobarrostech/api-mongo-docker)
-
+# Node API 
 [![Coverage Status](https://coveralls.io/repos/pedrobarrostech/api-mongo-docker/badge.svg?branch=master&service=github)](https://coveralls.io/github/pedrobarrostech/api-mongo-docker/?branch=master)
 
 An example of a dockerized node API built with [hapijs](http://hapijs.com), [mongodb](https://www.mongodb.org/) and [mongoose](https://mongoosejs.com).
@@ -55,9 +54,3 @@ Start docker and run:
 ```bash
 $ docker-compose up
 ```
-
-## Continuous Integration
-
-With [CircleCI](https://circleci.com/), see [circle.yml](circle.yml)
-
-Build url: https://circleci.com/gh/pedrobarrostech/api-mongo-docker
